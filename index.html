@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Services Age Verification</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('CT96ERJC77UB52N3MRM0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+    <style>
+    body {
+        font-family: 'Playfair Display', serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #000; /* Black for a rich, opulent background */
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        color: #FFD700; /* Gold for text, exuding luxury and sophistication */
+    }
+
+    h1, p, .timer, .time, .btn, footer, .footer-link a {
+        font-weight: 700;
+    }
+
+    h1 {
+        color: #FFD700; /* Gold for headers, elegant and prestigious */
+        font-size: 3.5em;
+    }
+
+    p {
+        font-size: 1.8em;
+        margin: 10px 0;
+        color: #FFF; /* White for body text, crisp and clear */
+    }
+
+    .timer {
+        font-size: 2em;
+        margin: 20px 0;
+        color: #FFD700; /* Gold for the timer, striking and consistent */
+    }
+
+    .time {
+        color: #FFD700; /* Matching the timer color */
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 1.8em;
+        color: #000; /* Black text for stark contrast */
+        background-color: #FFD700; /* Gold for buttons, commanding and bold */
+        text-align: center;
+        text-decoration: none;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    .btn:hover {
+        background-color: #C5B358; /* A darker shade of gold for hover, adding depth */
+    }
+
+    footer {
+        width: 100%;
+        background-color: #333; /* Dark gray to complement the body */
+        color: #FFD700; /* Gold for footer text, maintaining the luxurious theme */
+        padding: 20px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .footer-link a {
+        color: #FFF; /* White for links, consistent with body text */
+        text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <h1>Age Verification</h1>
+    <p>Please verify your age to continue.</p>
+    <div class="timer">
+        Time left: <span class="time" id="time">0:15</span>
+    </div>
+    <a href="https://thegood-health.online/vsl/" class="btn">Proceed</a>
+
+    <footer id="footer">
+        <div class="footer-link">
+            <a href="https://page1.thegoodhealht.online/privacy-policy/">Privacy Policy</a> |
+            <a href="https://page1.thegoodhealht.online/terms/">Terms of Use</a> |
+            <a href="https://page1.thegoodhealht.online/contact/">Contact Us</a>
+        </div>
+    </footer>
+
+    <script>
+        var time = 15;
+        var timerElement = document.getElementById('time');
+        var interval = setInterval(function() {
+            var minutes = Math.floor(time / 60);
+            var seconds = time % 60;
+            timerElement.textContent = minutes + ':' + (seconds < 10 ? '0' + seconds : seconds);
+            time--;
+
+            if (time <= 0) {
+                clearInterval(interval);
+                timerElement.textContent = "Time expired";
+                timerElement.style.color = "#FF1744"; /* Adding a red color for expiration alert */
+            }
+        }, 1000);
+
+        setTimeout(() => {
+            document.getElementById('footer'). style.display = 'block';
+        }, 1800000); // Delay footer visibility for 30 minutes
+    </script>
+</body>
+</html>
